@@ -6,15 +6,13 @@ based on https://github.com/astro/ruby-collectd and https://github.com/etsy/stat
 
 Example Usage
 -------
-CollectD::gauge('rf-django3/foo/bar97', rand(100,200));
+    CollectD::gauge('rf-django3/foo/bar97', rand(100,200));
 
 Setup
 -------
 Install collectd
 
-Setup collectd as a server:
-
-edit /etc/collectd/collectd.conf
+Setup collectd as a server by editing /etc/collectd/collectd.conf
 
     LoadPlugin "network"
     <Plugin "network">
